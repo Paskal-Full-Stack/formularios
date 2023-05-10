@@ -16,21 +16,21 @@
             <fieldset>
                 <legend>🙋‍♂️ Datos Personales</legend>
                 <p>
-                    <label for="nombre">Nombre:*</label>
+                    <label for="nombre">Nombre:*</label><br>
                     <input type="text" id="nombre" required>
                 </p>
                 <p>
-                    <label for="apellido">Apellido:*</label>
+                    <label for="apellido">Apellido:*</label><br>
                     <input type="text" id="apellido" required>
                 </p>
                 <p>
-                    <label for="documento">Documento:*</label>
+                    <label for="documento">Documento:*</label><br>
                     <input type="number" id="documento" required>
                 </p>
                 <p>
-                    <label for="nacionalidad">Nacionalidad:*</label>
+                    <label for="nacionalidad">Nacionalidad:*</label><br>
                     <select name="nacionalidad" id="nacionalidad" required>
-                        <option value="seleccionar">-Seleccionar-</option>
+                        <option class="select" value="seleccionar">-Seleccionar-</option>
                         <option value="argentina">Argentina</option>
                         <option value="brasileña">Brasileña</option>
                         <option value="uruguaya">Uruguaya</option>
@@ -38,7 +38,7 @@
                     </select>
                 </p>
                 <p>
-                    <label for="contanos">Contanos un poco de vos ...</label>
+                    <label for="contanos">Contanos un poco de vos ...</label><br>
                     <input type="text" id="contanos">
                 </p>
                 <p>
@@ -55,42 +55,44 @@
                     <label for="otro"> Otro</label>
                 </p>
             </fieldset>
+            <hr>
             <fieldset>
                 <legend>📱 Datos de Contacto 📧</legend>
                 <p>
-                    <label for="telefono">Telefono:</label>
+                    <label for="telefono">Telefono:</label><br>
                     <input type="tel" id="telefono" placeholder="Codigo de area y numero">
                 </p>
                 <p>
-                    <label for="direccion">Direccion de correo electronico:*</label>
+                    <label for="direccion">Direccion de correo electronico:*</label><br>
                     <input type="email" id="direccion" placeholder="Ej: mail@gmail.com" required>
                 </p>
             </fieldset>
-            <fieldset>
+            <hr>
+            <fieldset class="tres">
                 <legend>🚴‍♀️ Actividades 🤸‍♂️</legend>
                 <p>Por favor, indica cuales actividades te interesan.</p>
-                <p>
-                    <label for="">Sede Palermo:</label>
-                </p>
-                <label for="basquet">Basquet</label>
-                <input type="checkbox" id="basquet">
-                <label for="boxeo">Boxeo</label>
-                <input type="checkbox" id="boxeo">
-                <label for="futbol">Futbol</label>
-                <input type="checkbox" id="futbol">
-                <label for="tenis">Tenis</label>
-                <input type="checkbox" id="tenis">
-                <p>
-                    <label for="">Sede Rosario:</label>
-                </p>
-                <label for="basquet">Basquet</label>
-                <input type="checkbox" id="basquet">
-                <label for="futbol">Futbol</label>
-                <input type="checkbox" id="futbol">
-                <label for="boxeo">Boxeo</label>
-                <input type="checkbox" id="boxeo">
-                <label for="voley">Voley</label>
-                <input type="checkbox" id="voley">
+                <div>
+                    <label>Sede Palermo:</label><br>
+                    <input type="checkbox" id="basquet">
+                    <label for="basquet">Basquet</label>
+                    <input type="checkbox" id="boxeo">
+                    <label for="boxeo">Boxeo</label>
+                    <input type="checkbox" id="futbol">
+                    <label for="futbol">Futbol</label>
+                    <input type="checkbox" id="tenis">
+                    <label for="tenis">Tenis</label><br>
+                </div>
+                <div>
+                    <label>Sede Rosario:</label><br>
+                    <input type="checkbox" id="basquet2">
+                    <label for="basquet2">Basquet</label>
+                    <input type="checkbox" id="futbol2">
+                    <label for="futbol2">Futbol</label>
+                    <input type="checkbox" id="boxeo2">
+                    <label for="boxeo2">Boxeo</label>
+                    <input type="checkbox" id="voley">
+                    <label for="voley">Voley</label>
+                </div>
             </fieldset>
             <div class="acepto">
                 <p>
@@ -103,7 +105,7 @@
                 </p>
                 <p>*:campo obligatorio</p>
             </div>
-            
+
             <div class="submit">
                 <input type="submit" value="Iniciar afiliacion">
                 <input type="reset" value="Restablecer">

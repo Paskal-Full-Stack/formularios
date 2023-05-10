@@ -5,18 +5,6 @@
     font-family: sans-serif;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: #e8eaed;
-    font-weight: 900;
-    margin: 40px 20% 40px 20%;
-    padding: 10px;
-    border: 20px solid #4d6d63;
-    border-left: 0px;
-    border-right: 0px;
-}
-
 body {
     background-color: #1f2023;
 }
@@ -24,6 +12,19 @@ body {
 main {
     display: flex;
     justify-content: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    color: #e8eaed;
+    font-weight: 900;
+    margin: 40px 26% 40px 26%;
+    border: 20px #4d6d63 inset;
+    border-top:20px #4d6d63 outset;
+    border-left:30px rgba(255, 255, 255, 0) inset;
+    border-right:30px rgba(255, 255, 255, 0) inset; 
 }
 
 legend {
@@ -74,6 +75,11 @@ select {
     border-radius: 3px;
 }
 
+textarea {
+    border: 1px solid #9db29a;
+    border-radius: 3px;
+}
+
 hr {
     border: 15px dotted #d6e2de;
     border-top: 0px;
@@ -100,6 +106,10 @@ div input:hover {
     border-radius: 3px;
     padding: 10px;
     margin: 10px 10px 0 10px;
+}
+
+::placeholder {
+  text-align:center;
 }
 
 .acepto p {

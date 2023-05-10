@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Afiliacion</title>
+</head>
+
+<body>
+    <h1>Veni al Gym!💪🏼</h1>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>🙋‍♂️ Datos Personales</legend>
+                <p>
+                    <label for="nombre">Nombre:*</label>
+                    <input type="text" id="nombre" required>
+                </p>
+                <p>
+                    <label for="apellido">Apellido:*</label>
+                    <input type="text" id="apellido" required>
+                </p>
+                <p>
+                    <label for="documento">Documento:*</label>
+                    <input type="number" id="documento" required>
+                </p>
+                <p>
+                    <label for="nacionalidad">Nacionalidad:*</label>
+                    <select name="nacionalidad" id="nacionalidad" required>
+                        <option value="seleccionar">-Seleccionar-</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasileña">Brasileña</option>
+                        <option value="uruguaya">Uruguaya</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="contanos">Contanos un poco de vos ...</label>
+                    <input type="text" id="contanos">
+                </p>
+                <p>
+                    <label for="sexo">Sexo:*</label>
+                </p>
+                <p>
+                    <input type="radio" id="femenino">
+                    <label for="femenino"> Femenino</label>
+
+                    <input type="radio" id="masculino">
+                    <label for="masculino"> masculino</label>
+
+                    <input type="radio" id="otro">
+                    <label for="otro"> Otro</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>📱 Datos de Contacto 📧</legend>
+                <p>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" placeholder="Codigo de area y numero">
+                </p>
+                <p>
+                    <label for="direccion">Direccion de correo electronico:*</label>
+                    <input type="email" id="direccion" placeholder="Ej: mail@gmail.com" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>🚴‍♀️ Actividades 🤸‍♂️</legend>
+                <p>Por favor, indica cuales actividades te interesan.</p>
+                <p>
+                    <label for="">Sede Palermo:</label>
+                </p>
+                <label for="basquet">Basquet</label>
+                <input type="checkbox" id="basquet">
+                <label for="boxeo">Boxeo</label>
+                <input type="checkbox" id="boxeo">
+                <label for="futbol">Futbol</label>
+                <input type="checkbox" id="futbol">
+                <label for="tenis">Tenis</label>
+                <input type="checkbox" id="tenis">
+                <p>
+                    <label for="">Sede Rosario:</label>
+                </p>
+                <label for="basquet">Basquet</label>
+                <input type="checkbox" id="basquet">
+                <label for="futbol">Futbol</label>
+                <input type="checkbox" id="futbol">
+                <label for="boxeo">Boxeo</label>
+                <input type="checkbox" id="boxeo">
+                <label for="voley">Voley</label>
+                <input type="checkbox" id="voley">
+            </fieldset>
+            <div class="acepto">
+                <p>
+                    <input type="checkbox" id="acepto" required>
+                    <label for="acepto">Acepto las condiciones*</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="deseo">
+                    <label for="deseo">Deseo recibir novedades</label>
+                </p>
+                <p>*:campo obligatorio</p>
+            </div>
+            
+            <div class="submit">
+                <input type="submit" value="Iniciar afiliacion">
+                <input type="reset" value="Restablecer">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

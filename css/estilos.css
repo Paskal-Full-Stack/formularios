@@ -22,9 +22,9 @@ h1 {
     font-weight: 900;
     margin: 40px 26% 40px 26%;
     border: 20px #4d6d63 inset;
-    border-top:20px #4d6d63 outset;
-    border-left:30px rgba(255, 255, 255, 0) inset;
-    border-right:30px rgba(255, 255, 255, 0) inset; 
+    border-top: 20px #4d6d63 outset;
+    border-left: 30px rgba(255, 255, 255, 0) inset;
+    border-right: 30px rgba(255, 255, 255, 0) inset;
 }
 
 legend {
@@ -38,13 +38,13 @@ legend {
 }
 
 fieldset {
-    width: 900px;
+    width: 60em;
     height: auto;
     padding: 20px;
     margin: 20px 0 20px 0;
     background-color: #d6e2de;
     text-align: center;
-    border: 3px solid #4d6d63;
+    border: 2px solid #4d6d63;
     border-radius: 5px;
 }
 
@@ -64,15 +64,41 @@ fieldset div {
 }
 
 input {
-    padding: 10px 150px;
+    padding: 10px;
     border: 1px solid #9db29a;
     border-radius: 3px;
 }
 
+.input {
+    width: 480px;
+}
+
+input:focus {
+    background-color: #4d6d63;
+}
+
+fieldset:focus-within {
+    background-color: #a6c1b9;
+}
+
+fieldset:focus-within>legend {
+    background-color: #2b3d37;
+}
+
+input::placeholder {
+    text-align: right;
+    color: #a6c1b9;
+    font-size: 18px;
+}
+
 select {
-    padding: 10px 186px;
+    width: 480px;
+    padding: 10px;
     border: 1px solid #9db29a;
     border-radius: 3px;
+    color: #9db29a;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 textarea {
@@ -109,7 +135,7 @@ div input:hover {
 }
 
 ::placeholder {
-  text-align:center;
+    text-align: center;
 }
 
 .acepto p {

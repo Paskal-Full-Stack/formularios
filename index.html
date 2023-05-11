@@ -11,32 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@500&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
     <title>Afiliación</title>
 </head>
 
 <body>
     <h1>Vení al Gym!💪🏼</h1>
     <main>
-        <form action="">
+        <form>
             <fieldset>
                 <legend>🙋‍♂️ Datos Personales 👀</legend>
                 <p>
                     <label for="nombre">Nombre:*</label><br>
-                    <input type="text" id="nombre" required>
+                    <input class="input" type="text" id="nombre" required>
                 </p>
                 <p>
                     <label for="apellido">Apellido:*</label><br>
-                    <input type="text" id="apellido" required>
+                    <input class="input" type="text" id="apellido" required>
                 </p>
                 <p>
                     <label for="documento">Documento:*</label><br>
-                    <input type="number" id="documento" required>
+                    <input class="input" type="number" id="documento" required>
                 </p>
                 <p>
                     <label for="nacionalidad">Nacionalidad:*</label><br>
                     <select name="nacionalidad" id="nacionalidad" required>
-                        <option class="select" value="seleccionar">-Seleccionar-</option>
+                        <option class="select" value="">-Seleccionar-</option>
                         <option value="argentina">Argentina</option>
                         <option value="brasileña">Brasileña</option>
                         <option value="uruguaya">Uruguaya</option>
@@ -45,19 +46,19 @@
                 </p>
                 <p>
                     <label for="contanos">Contanos un poco de vos ...</label><br>
-                    <textarea name="contanos" id="contanos" cols="65" rows="10"></textarea>
+                    <textarea name="contanos" id="contanos" cols="66" rows="10"></textarea>
                 </p>
                 <p>
-                    <label for="sexo">Sexo:*</label>
+                    Sexo:*
                 </p>
                 <p>
-                    <input type="radio" id="femenino">
+                    <input name="opcion" type="radio" id="femenino">
                     <label for="femenino"> Femenino</label>
 
-                    <input type="radio" id="masculino">
+                    <input name="opcion" type="radio" id="masculino">
                     <label for="masculino"> masculino</label>
 
-                    <input type="radio" id="otro">
+                    <input name="opcion" type="radio" id="otro">
                     <label for="otro"> Otro</label>
                 </p>
             </fieldset>
@@ -66,11 +67,11 @@
                 <legend>📱 Datos de Contacto 📧</legend>
                 <p>
                     <label for="telefono">Teléfono:</label><br>
-                    <input type="tel" id="telefono" class="que" placeholder="Código de área y número">
+                    <input class="input" type="tel" id="telefono" class="que" placeholder="Código de área y número">
                 </p>
                 <p>
                     <label for="direccion">Dirección de correo electrónico:*</label><br>
-                    <input type="email" id="direccion" placeholder="Ej: mail@gmail.com" required>
+                    <input class="input" type="email" id="direccion" placeholder="Ej: mail@gmail.com" required>
                 </p>
             </fieldset>
             <hr>
